@@ -19,7 +19,7 @@ export default function ProjectsSection() {
               <div className=" md:w-1/2">
                 <Link href="https://bandify-project.fly.dev/" target="_blank">
                   <Image
-                    src="/bandify.PNG"
+                    src="https://res.cloudinary.com/dc2znemzw/image/upload/v1701432324/kikxcggqym88ckmjjknm.png"
                     alt=""
                     width={1000}
                     height={1000}
