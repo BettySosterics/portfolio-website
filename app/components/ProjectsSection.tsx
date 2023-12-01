@@ -18,7 +18,7 @@ export default function ProjectsSection() {
             <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
               <div className=" md:w-1/2">
                 <Link href="https://bandify-project.fly.dev/" target="_blank">
-                  <Image
+                  <img
                     src="https://res.cloudinary.com/dc2znemzw/image/upload/v1701432324/kikxcggqym88ckmjjknm.png"
                     alt=""
                     width={1000}

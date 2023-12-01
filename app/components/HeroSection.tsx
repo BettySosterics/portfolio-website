@@ -9,7 +9,7 @@ export default function HeroSection() {
     <section id="home">
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-8 sm:py-16 md:py-24 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-2 md:w-1/2">
-          <Image
+          <img
             src="https://res.cloudinary.com/dc2znemzw/image/upload/v1701432314/atzuibptfgozdt00dxx4.jpg"
             alt=""
             width={325}
