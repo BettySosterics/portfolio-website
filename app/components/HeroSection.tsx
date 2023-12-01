@@ -25,7 +25,7 @@ export default function HeroSection() {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{' '}
             <span className="font-semibold text-violet-600">
-              Full-Stack Developer{' '}
+              Web Developer{' '}
             </span>
             based in Vienna, Austria.
           </p>

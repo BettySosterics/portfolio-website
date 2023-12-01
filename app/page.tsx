@@ -3,8 +3,8 @@ import HeroSection from './components/HeroSection';
 import ProjectsSection from './components/ProjectsSection';
 
 export const metadata = {
-  title: { default: 'Betty | Full-Stack Developer' },
-  description: 'Full-Stack Developer based in Vienna, Austria',
+  title: { default: 'Betty | Web Developer' },
+  description: 'Web Developer based in Vienna, Austria',
 };
 
 export default async function HomePage() {
