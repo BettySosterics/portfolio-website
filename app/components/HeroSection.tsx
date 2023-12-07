@@ -1,6 +1,5 @@
 'use client'; // this is a client component
-import Image from 'next/image';
-import React from 'react';
+
 import { HiArrowDown } from 'react-icons/hi';
 import { Link } from 'react-scroll/modules';
 
@@ -31,7 +30,7 @@ export default function HeroSection() {
           </p>
           <Link
             to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-violet-600 rounded shadow hover:bg-violet-700"
+            className="text-neutral-100 font-semibold px-6 py-3 bg-violet-600 rounded shadow hover:bg-violet-700 cursor-pointer"
             activeClass="active"
             spy={true}
             smooth={true}
@@ -42,18 +41,9 @@ export default function HeroSection() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-row items-center text-center justify-center ">
-        <Link
-          to="about"
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-        >
-          <HiArrowDown size={35} className="animate-bounce" />
-        </Link>
-      </div>
+      {/* <div className="flex flex-row items-center text-center justify-center ">
+        <HiArrowDown size={35} className="animate-bounce" />
+      </div> */}
     </section>
   );
 }

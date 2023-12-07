@@ -3,6 +3,7 @@
 import { useTheme } from 'next-themes';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { RiMoonFill, RiSunLine } from 'react-icons/ri';
 import { Link } from 'react-scroll/modules';
@@ -39,7 +40,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="home">
               <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold text-neutral-100">
+                <h2 className="text-2xl font-bold text-neutral-100 cursor-pointer">
                   Betty Sosterics
                 </h2>
               </div>
@@ -57,7 +58,7 @@ export default function Navbar() {
 
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-2 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar ? 'block' : 'hidden'
             }`}
           >
@@ -68,7 +69,7 @@ export default function Navbar() {
                     key={idx}
                     to={item.page}
                     className={
-                      'block lg:inline-block text-neutral-100  hover:text-neutral-500 '
+                      'hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100'
                     }
                     activeClass="active"
                     spy={true}
@@ -96,6 +97,27 @@ export default function Navbar() {
                   <RiMoonFill size={25} />
                 </button>
               )} */}
+
+              <a
+                href="https://github.com/bettysosterics"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <AiOutlineGithub
+                  className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+                  size={30}
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/betty-sosterics/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <AiOutlineLinkedin
+                  className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+                  size={30}
+                />
+              </a>
             </div>
           </div>
         </div>
